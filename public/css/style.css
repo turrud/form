@@ -1,0 +1,58 @@
+body{
+    font-family: 'Times New Roman';
+
+
+    background-size: cover; /* This makes the image cover the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* backdrop-filter: blur(5px); Sesuaikan nilai blur sesuai keinginan Anda */
+
+}
+
+#imagePreview {
+  max-width: 40%;
+  max-height: auto; /* Sesuaikan dengan kebutuhan Anda */
+  overflow: hidden;
+}
+#imagePreview img {
+  max-width: 40%;
+  height: 30%;
+}
+
+.tr{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.4); /* Warna latar belakang transparan */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CSS untuk mengatur tampilan input dan tombol */
+.form-control {
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* CSS untuk mengatur tampilan header formulir */
+.card-header {
+    background-color: rgba(255, 255, 255, 0.3); /* Warna header transparan */
+    padding: 10px;
+    text-align: center;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.774);
+}

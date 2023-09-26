@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Form;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('daftar');
 });
+
+Route::resource('daftar', FormController::class);
