@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u1575278/public_html/bincang.dananjayadesign.com/
+    - export DEPLOYPATH=/home/u1575278/public_html/bincang/
     # - /bin/cp index.php $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH
