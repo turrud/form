@@ -1,6 +1,8 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/u1575278/public_html/bincang/
-    - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp public/index.php $DEPLOYPATH
+    - /bin/cp -R public/* $DEPLOYPATH
+    - sed -i 's|__DIR__.'/../|__DIR__.'/|g' $DEPLOYPATH/index.php
+    - /bin/cp -R vendor $DEPLOYPATH
+    - /bin/cp .env $DEPLOYPATH
