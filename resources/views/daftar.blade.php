@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dananjaya Design | Form</title>
-    <link rel="shortcut icon" href="{{ asset('img/icon.png') }}" type="image/x-icon">
+    <title>Dananjaya Design | Bincang</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
@@ -20,7 +20,7 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border position-relative text-black-50" style="width: 6rem; height: 6rem;" role="status"></div>
-        <img style="width: 6rem; height: 6rem;" class="position-absolute top-50 start-50 translate-middle" src="{{ asset('img/loader.jpeg') }}" alt="Icon">
+        <img style="width: 6rem; height: 6rem;" class="position-absolute top-50 start-50 translate-middle" src="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" alt="Icon">
     </div>
     <!-- Spinner End -->
     <div class="container">
@@ -64,9 +64,9 @@
         <div class="col">
             <div class="card">
                 <div class="text-center mt-3">
-                    <img style="width: 1cm;height: 1cm;" src="{{ asset('img/logo-1.png') }}" alt="logo-ddn">
-                    <img style="width: 3.5cm;height: 3.5cm;" src="{{ asset('img/logo.png') }}" alt="logo-ddn">
-                    <img style="width: 1cm;height: 1cm;" src="{{ asset('img/logo-1.png') }}" alt="logo-ddn">
+
+                    <img style="width: 3.5cm;height: 3.5cm;" src="https://res.cloudinary.com/djzee3t99/image/upload/v1709273130/ddn/img/logo/logo_ase2ly.png" alt="logo-ddn">
+
                 </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('daftar.store') }}" enctype="multipart/form-data">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email@example.com" required autofocus value="{{ old('email') }}">
+                            <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="email@domain.com" required autofocus value="{{ old('email') }}">
                             @error('email')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -99,7 +99,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="gambar">Bukti Transfer:</label>
+                            <label for="gambar">Bukti Transfer: Rp. 10.000</label>
                             <figcaption class="blockquote-footer mt-1 text-dark">
                                 Bukti transfer bagi yang ingin mendapatkan sertifikat.
                             </figcaption>
