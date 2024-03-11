@@ -47,13 +47,14 @@
         </div>
 
 
-
         @if (session('success'))
         <div class="alert alert-success mt-3 tr" role="alert">
             <h4 class="alert-heading">Well done!</h4>
             <p>{{ session('success') }}</p>
             <hr>
-            <p class="mb-0"><a style="text-decoration: none;color: green" href="https://chat.whatsapp.com/I4tBR2KO0Om4MUPNXsiKjR"><i style="color: green" class="bi bi-whatsapp"></i>&nbsp;&nbsp;Silahkan join ke group WhatsApp</a></p>
+            <p class="mb-0"><a target="_blank" style="text-decoration: none;color: rgb(0, 0, 0)" href="https://meet.google.com/ogr-vyzc-iuy"><i style="color: rgb(4, 6, 4)" ></i><img src="{{ asset('img/Gmeet.png') }}" alt="">&nbsp;&nbsp;link Google-meet</a></p>
+            
+            <p class="mb-0"><a target="_blank" style="text-decoration: none;color: rgb(0, 0, 0)" href="https://chat.whatsapp.com/I4tBR2KO0Om4MUPNXsiKjR"><i style="color: green" class="bi bi-whatsapp"></i>&nbsp;&nbsp;Silahkan join ke group WhatsApp</a></p>
             <div class="d-flex flex-row-reverse">
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>

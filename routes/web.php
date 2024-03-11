@@ -19,4 +19,6 @@ Route::get('/', function () {
     return view('daftar');
 });
 
+// Route::get('/list', [FormController::class, 'index']);
+
 Route::resource('daftar', FormController::class);
