@@ -99,7 +99,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="gambar">Bukti Transfer: Rp. 10.000</label>
+                            <label for="gambar">"optional" - Bukti Transfer: Rp. 10.000</label>
                             <figcaption class="blockquote-footer mt-1 text-dark">
                                 Bukti transfer bagi yang ingin mendapatkan sertifikat.
                             </figcaption>
